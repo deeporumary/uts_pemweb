@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive IKEA Website</title>
+
+  <!-- Style and Icons -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">
+      <img src="logo_ikea.svg" alt="Menu" style="width: 70px;" />
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#detail">News Detail</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1><span>Make </span>Your Comfort <br /> Is Our <span>Happiness</span></h1>
+      <p>IKEA adalah perusahaan asal Swedia yang menawarkan perabot rumah tangga bergaya Skandinavia yang terjangkau dan fungsional.</p>
+      <a href="#about" class="btn">Discover More</a>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news" id="news">
+    <div class="heading">
+      <span>What's Up, IKEA?</span>
+      <h2>Latest news, updates, and stories from IKEA</h2>
+    </div>
+
+    <div class="news-container">
+      <div class="box">
+        <a href="#latest">
+        <div class="box-img"><img src="ikea1.jpg" alt="" /></div>
+        <div class="title-news"><h3>Latest News</h3></div>
+      </a>
+    </div>
+
+      <div class="box">
+        <a href="#general">
+        <div class="box-img"><img src="ikea2.jpg" alt="" /></div>
+        <div class="title-news"><h3>General News</h3></div>
+      </a>
+    </div>
+
+      <div class="box">
+        <a href="#product"></a>
+        <div class="box-img"><img src="ikea3.jpg" alt="" /></div>
+        <div class="title-news"><h3>Product News</h3></div>
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="#recall">
+        <div class="box-img"><img src="ikea4.jpg" alt="" /></div>
+        <div class="title-news"><h3>Product Recall</h3></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- News Detail Tabs -->
+<section class="news-detail" id="detail">
+  <div class="container">
+    <div class="tab-buttons">
+      <button class="tab-btn" onclick="showNews(event, 'latest')">Latest News</button>
+      <button class="tab-btn" onclick="showNews(event, 'general')">General News</button>
+      <button class="tab-btn" onclick="showNews(event, 'product')">Product News</button>
+      <button class="tab-btn" onclick="showNews(event, 'recall')">Product Recall</button>
+    </div>
+
+    <div class="news-content" id="latest">
+      <h2>IKEA Umumkan Penarikan Lampu SVARTRÅ LED karena Alasan Keamanan</h2>
+      <p class="date">Published on May 13, 2025</p>
+      <p>IKEA mengumumkan penarikan kembali terhadap produk lampu rantai SVARTRÅ LED luar ruangan hitam, 12 lampu karena adanya potensi risiko keselamatan...</p>
+    </div>
+
+    <div class="news-content" id="general" style="display:none;">
+      <h2>IKEA Fokus Ekspansi dan Dukung UMKM Lokal di Indonesia</h2>
+      <p class="date">Published on May 09, 2025</p>
+      <p>IKEA Indonesia menegaskan komitmennya untuk memperluas layanan dan mendukung pelaku usaha lokal...</p>
+    </div>
+
+    <div class="news-content" id="product" style="display:none;">
+      <h2>IKEA Luncurkan Koleksi “HARMONISK” – Perabot Ramah Lingkungan Bernuansa Alami</h2>
+      <p class="date">Published on May 10, 2025</p>
+      <p>IKEA resmi meluncurkan koleksi “HARMONISK” yang ramah lingkungan dengan nuansa alami...</p>
+    </div>
+
+    <div class="news-content" id="recall" style="display:none;">
+      <h2>IKEA Tarik Kembali Power Bank VARMFRONT karena Risiko Kebakaran</h2>
+      <p class="date">Published on May 15, 2025</p>
+      <p>IKEA menarik kembali power bank VARMFRONT karena risiko kebakaran akibat cacat produksi...</p>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <img src="aboutus.jpg" alt="" />
+    </div>
+    <div class="about-text">
+      <span>About Us</span>
+      <h2>Furniture is important part for comfort</h2>
+      <p>IKEA menghadirkan berbagai pilihan perabot yang dirancang untuk memberikan kenyamanan maksimal tanpa mengorbankan gaya.</p>
+      <p>Setiap produk kami dibuat dengan detail dan kualitas tinggi agar rumahmu terasa lebih hangat, fungsional, dan penuh inspirasi..</p>
+      <a href="#contact" class="btn">Contact Information.</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <main class="row">
+        <section class="col left">
+          <div class="contactTitle">
+            <h2>Contact IKEA</h2>
+            <p>Kami siap membantu Anda! Untuk pertanyaan tentang produk, layanan, pengiriman, atau lainnya, silakan hubungi kami melalui informasi berikut:</p>
+          </div>
+
+          <div class="contactInfo">
+            <div class="iconGroup">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="details">
+                <span>Telepon</span>
+                <span>021-2985-3900</span>
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="details">
+                <span>Email</span>
+                <span>cs@ikea.co.id</span>
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="details">
+                <span>Alamat</span>
+                <span>IKEA Alam Sutera, Jl. Jalur Sutera Boulevard No. 45, Tangerang</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="socialMedia">
+            <a href="https://www.instagram.com/ikea_id/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/IKEAIndonesia/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/IKEA_ID"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/user/IKEAIndonesia"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 1rem; background: #edecea;">
+    <p>&copy; 2025 IKEA Indonesia. All rights reserved.</p>
+  </footer>
+
+<script>
+  function showNews(event, type) {
+    const tabs = document.querySelectorAll('.news-content');
+    const buttons = document.querySelectorAll('.tab-btn');
+
+    // Sembunyikan semua tab
+    tabs.forEach(tab => tab.style.display = 'none');
+
+    // Tampilkan yang dipilih
+    document.getElementById(type).style.display = 'block';
+
+    // Atur kelas active
+    buttons.forEach(btn => btn.classList.remove('active'));
+    if (event) event.currentTarget.classList.add('active');
+  }
+
+  // Ketika halaman dimuat
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    const defaultTab = ['latest', 'general', 'product', 'recall'].includes(hash) ? hash : 'latest';
+    showNews(null, defaultTab);
+  });
+
+  // Tangani klik pada kotak News
+  document.querySelectorAll('.news-container a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = this.getAttribute('href').replace('#', '');
+      showNews(null, target);
+      
+      // Scroll ke bagian detail
+      document.getElementById('detail').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
